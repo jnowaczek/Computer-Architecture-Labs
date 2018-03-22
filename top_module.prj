@@ -1,0 +1,8 @@
+vhdl work "UART_tx_chr.vhd"
+vhdl work "sseg.vhd"
+vhdl work "hex_to_ascii.vhd"
+vhdl work "sseg_display.vhd"
+vhdl work "memory_to_serial.vhd"
+vhdl work "fetch.vhd"
+vhdl work "debounce2.vhd"
+vhdl work "top_module.vhd"

@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\labs\lab8\top_module.ncd
+OUTFILE=C:\labs\lab8\top_module.bit
+FAMILY=Spartan6
+PART=xc6slx16-3csg324
+WORKINGDIR=C:\labs\lab8
+LICENSE=WebPack
+USER_INFO=210669579_0_0_028

@@ -1,0 +1,20 @@
+Release 14.5 Drc P.58f (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Wed Mar 21 18:18:07 2018
+
+drc -z top_module.ncd top_module.pcf
+
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   uart_print/state_reg[3]_GND_23_o_Mux_67_o is sourced by a combinatorial pin.
+   This is not good design practice. Use the CE pin to control the loading of
+   data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   uart_print/Mram_state_reg[3]_PWR_15_o_Mux_43_o is sourced by a combinatorial
+   pin. This is not good design practice. Use the CE pin to control the loading
+   of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net uart_print/tx_enable is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+DRC detected 0 errors and 3 warnings.  Please see the previously displayed
+individual error or warning messages for more details.
