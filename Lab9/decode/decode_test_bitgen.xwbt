@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\labs\Lab9\decode\decode_test.ncd
+OUTFILE=C:\labs\Lab9\decode\decode_test.bit
+FAMILY=Spartan6
+PART=xc6slx16-3csg324
+WORKINGDIR=C:\labs\Lab9\decode
+LICENSE=WebPack
+USER_INFO=210669579_0_0_028

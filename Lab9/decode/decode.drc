@@ -1,0 +1,8 @@
+Release 14.5 Drc P.58f (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Tue Mar 27 12:40:44 2018
+
+drc -z decode.ncd decode.pcf
+
+DRC detected 0 errors and 0 warnings.

@@ -1,0 +1,205 @@
+--------------------------------------------------------------------------------
+Release 14.5 Trace  (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.5\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 3
+-n 3 -fastpaths -xml decode.twx decode.ncd -o decode.twr decode.pcf
+
+Design file:              decode.ncd
+Physical constraint file: decode.pcf
+Device,package,speed:     xc6slx16,csg324,C,-3 (PRODUCTION 1.23 2013-03-26)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+instruction<0> |immediate<0>   |    7.355|
+instruction<0> |jump_addr<0>   |    6.802|
+instruction<1> |immediate<1>   |    6.440|
+instruction<1> |jump_addr<1>   |    6.667|
+instruction<2> |immediate<2>   |    7.634|
+instruction<2> |jump_addr<2>   |    6.841|
+instruction<3> |immediate<3>   |    6.446|
+instruction<3> |jump_addr<3>   |    6.822|
+instruction<4> |immediate<4>   |    7.538|
+instruction<4> |jump_addr<4>   |    6.614|
+instruction<5> |immediate<5>   |    6.636|
+instruction<5> |jump_addr<5>   |    6.581|
+instruction<6> |immediate<6>   |    6.876|
+instruction<6> |jump_addr<6>   |    7.596|
+instruction<7> |immediate<7>   |    6.702|
+instruction<7> |jump_addr<7>   |    7.649|
+instruction<8> |immediate<8>   |    6.867|
+instruction<8> |jump_addr<8>   |    7.883|
+instruction<9> |immediate<9>   |    6.716|
+instruction<9> |jump_addr<9>   |    7.505|
+instruction<10>|immediate<10>  |    7.488|
+instruction<10>|jump_addr<10>  |    7.471|
+instruction<11>|immediate<11>  |    6.886|
+instruction<11>|jump_addr<11>  |    9.117|
+instruction<11>|register_rd<0> |    6.382|
+instruction<11>|register_rd<4> |    6.543|
+instruction<11>|register_rd<8> |    6.336|
+instruction<11>|register_rd<12>|    6.543|
+instruction<11>|register_rd<16>|    7.586|
+instruction<11>|register_rd<20>|    7.054|
+instruction<11>|register_rd<24>|    7.591|
+instruction<11>|register_rd<28>|    7.778|
+instruction<12>|immediate<12>  |    7.378|
+instruction<12>|jump_addr<12>  |    8.389|
+instruction<12>|register_rd<1> |    6.433|
+instruction<12>|register_rd<5> |    5.973|
+instruction<12>|register_rd<9> |    6.223|
+instruction<12>|register_rd<13>|    6.608|
+instruction<12>|register_rd<17>|    7.726|
+instruction<12>|register_rd<21>|    7.084|
+instruction<12>|register_rd<25>|    7.682|
+instruction<12>|register_rd<29>|    7.705|
+instruction<13>|immediate<13>  |    6.895|
+instruction<13>|jump_addr<13>  |    8.172|
+instruction<13>|register_rd<2> |    6.171|
+instruction<13>|register_rd<6> |    6.372|
+instruction<13>|register_rd<10>|    6.643|
+instruction<13>|register_rd<14>|    6.672|
+instruction<13>|register_rd<18>|    7.187|
+instruction<13>|register_rd<22>|    7.466|
+instruction<13>|register_rd<26>|    7.801|
+instruction<13>|register_rd<30>|    7.659|
+instruction<14>|immediate<14>  |    7.207|
+instruction<14>|jump_addr<14>  |    8.250|
+instruction<14>|register_rd<3> |    6.215|
+instruction<14>|register_rd<7> |    6.261|
+instruction<14>|register_rd<11>|    6.489|
+instruction<14>|register_rd<15>|    6.716|
+instruction<14>|register_rd<19>|    7.225|
+instruction<14>|register_rd<23>|    7.510|
+instruction<14>|register_rd<27>|    7.896|
+instruction<14>|register_rd<31>|    7.709|
+instruction<15>|immediate<15>  |    8.985|
+instruction<15>|immediate<16>  |    9.000|
+instruction<15>|immediate<17>  |    9.021|
+instruction<15>|immediate<18>  |    9.161|
+instruction<15>|immediate<19>  |    8.831|
+instruction<15>|immediate<20>  |    8.981|
+instruction<15>|immediate<21>  |    7.822|
+instruction<15>|immediate<22>  |    8.777|
+instruction<15>|immediate<23>  |    7.645|
+instruction<15>|immediate<24>  |    8.798|
+instruction<15>|immediate<25>  |    7.550|
+instruction<15>|immediate<26>  |    9.236|
+instruction<15>|immediate<27>  |    7.381|
+instruction<15>|immediate<28>  |    7.524|
+instruction<15>|immediate<29>  |    7.048|
+instruction<15>|immediate<30>  |    7.152|
+instruction<15>|immediate<31>  |    6.991|
+instruction<15>|jump_addr<15>  |    7.520|
+instruction<16>|jump_addr<16>  |    7.911|
+instruction<16>|register_rt<0> |   11.207|
+instruction<16>|register_rt<4> |   11.498|
+instruction<16>|register_rt<8> |   11.059|
+instruction<16>|register_rt<12>|   10.470|
+instruction<16>|register_rt<16>|   10.194|
+instruction<16>|register_rt<20>|   10.486|
+instruction<16>|register_rt<24>|   10.160|
+instruction<16>|register_rt<28>|   10.188|
+instruction<17>|jump_addr<17>  |    7.410|
+instruction<17>|register_rt<1> |   11.327|
+instruction<17>|register_rt<5> |   11.147|
+instruction<17>|register_rt<9> |   10.888|
+instruction<17>|register_rt<13>|   11.003|
+instruction<17>|register_rt<17>|   11.019|
+instruction<17>|register_rt<21>|   10.633|
+instruction<17>|register_rt<25>|   10.281|
+instruction<17>|register_rt<29>|   10.190|
+instruction<18>|jump_addr<18>  |    7.275|
+instruction<18>|register_rt<2> |   11.304|
+instruction<18>|register_rt<6> |   11.048|
+instruction<18>|register_rt<10>|   10.986|
+instruction<18>|register_rt<14>|   10.972|
+instruction<18>|register_rt<18>|   10.680|
+instruction<18>|register_rt<22>|   10.517|
+instruction<18>|register_rt<26>|   10.529|
+instruction<18>|register_rt<30>|    9.895|
+instruction<19>|jump_addr<19>  |    7.260|
+instruction<19>|register_rt<3> |   11.056|
+instruction<19>|register_rt<7> |   11.171|
+instruction<19>|register_rt<11>|   11.094|
+instruction<19>|register_rt<15>|   10.708|
+instruction<19>|register_rt<19>|   10.458|
+instruction<19>|register_rt<23>|   10.289|
+instruction<19>|register_rt<27>|   10.103|
+instruction<19>|register_rt<31>|    9.662|
+instruction<20>|jump_addr<20>  |    6.901|
+instruction<21>|jump_addr<21>  |    8.130|
+instruction<21>|register_rs<0> |    9.636|
+instruction<21>|register_rs<4> |    9.791|
+instruction<21>|register_rs<8> |   10.085|
+instruction<21>|register_rs<12>|   10.076|
+instruction<21>|register_rs<16>|   10.660|
+instruction<21>|register_rs<20>|   10.914|
+instruction<21>|register_rs<24>|   10.750|
+instruction<21>|register_rs<28>|   11.115|
+instruction<22>|jump_addr<22>  |    7.683|
+instruction<22>|register_rs<1> |    9.785|
+instruction<22>|register_rs<5> |    9.985|
+instruction<22>|register_rs<9> |    9.993|
+instruction<22>|register_rs<13>|   10.224|
+instruction<22>|register_rs<17>|   10.445|
+instruction<22>|register_rs<21>|   11.073|
+instruction<22>|register_rs<25>|   11.337|
+instruction<22>|register_rs<29>|   11.187|
+instruction<23>|jump_addr<23>  |    7.535|
+instruction<23>|register_rs<2> |    9.718|
+instruction<23>|register_rs<6> |    9.836|
+instruction<23>|register_rs<10>|    9.830|
+instruction<23>|register_rs<14>|   10.293|
+instruction<23>|register_rs<18>|   10.739|
+instruction<23>|register_rs<22>|   10.723|
+instruction<23>|register_rs<26>|   11.174|
+instruction<23>|register_rs<30>|   11.079|
+instruction<24>|jump_addr<24>  |    8.355|
+instruction<24>|register_rs<3> |    9.782|
+instruction<24>|register_rs<7> |    9.584|
+instruction<24>|register_rs<11>|    9.674|
+instruction<24>|register_rs<15>|    9.759|
+instruction<24>|register_rs<19>|   10.202|
+instruction<24>|register_rs<23>|   10.585|
+instruction<24>|register_rs<27>|   10.610|
+instruction<24>|register_rs<31>|   10.905|
+instruction<25>|jump_addr<25>  |    7.058|
+---------------+---------------+---------+
+
+
+Analysis completed Tue Mar 27 12:40:40 2018 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 217 MB
+
+
+
