@@ -1,5 +1,5 @@
 //! **************************************************************************
-// Written by: Map P.58f on Tue Mar 27 15:42:29 2018
+// Written by: Map P.58f on Thu Mar 29 13:25:23 2018
 //! **************************************************************************
 
 SCHEMATIC START;
@@ -15,6 +15,8 @@ COMP "switches<0>" LOCATE = SITE "T10" LEVEL 1;
 COMP "switches<1>" LOCATE = SITE "T9" LEVEL 1;
 COMP "switches<2>" LOCATE = SITE "V9" LEVEL 1;
 COMP "switches<3>" LOCATE = SITE "M8" LEVEL 1;
+PIN switches<3>_pin<0> = BEL "switches<3>" PINNAME PAD;
+PIN "switches<3>_pin<0>" CLOCK_DEDICATED_ROUTE = FALSE;
 COMP "switches<4>" LOCATE = SITE "T5" LEVEL 1;
 COMP "leds<0>" LOCATE = SITE "U16" LEVEL 1;
 COMP "leds<1>" LOCATE = SITE "V16" LEVEL 1;

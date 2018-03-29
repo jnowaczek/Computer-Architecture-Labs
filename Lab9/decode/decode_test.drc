@@ -1,24 +1,32 @@
 Release 14.5 Drc P.58f (nt64)
 Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 
-Tue Mar 27 15:42:45 2018
+Thu Mar 29 13:25:39 2018
 
 drc -z decode_test.ncd decode_test.pcf
 
 WARNING:PhysDesignRules:372 - Gated clock. Clock net
-   uart_print/Mram_state_reg[3]_PWR_84_o_Mux_43_o is sourced by a combinatorial
-   pin. This is not good design practice. Use the CE pin to control the loading
-   of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net
-   decode/instruction[15]_Decoder_4_OUT<0> is sourced by a combinatorial pin.
-   This is not good design practice. Use the CE pin to control the loading of
-   data into the flip-flop.
+   decode/regwrite_GND_5_o_AND_704_o is sourced by a combinatorial pin. This is
+   not good design practice. Use the CE pin to control the loading of data into
+   the flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net uart_print/tx_enable is
    sourced by a combinatorial pin. This is not good design practice. Use the CE
    pin to control the loading of data into the flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net
-   uart_print/state_reg[3]_GND_658_o_Mux_67_o is sourced by a combinatorial pin.
+   uart_print/Mram_state_reg[3]_PWR_52_o_Mux_43_o is sourced by a combinatorial
+   pin. This is not good design practice. Use the CE pin to control the loading
+   of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   uart_print/state_reg[3]_GND_626_o_Mux_67_o is sourced by a combinatorial pin.
    This is not good design practice. Use the CE pin to control the loading of
    data into the flip-flop.
-DRC detected 0 errors and 4 warnings.  Please see the previously displayed
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   decode/regwrite_GND_5_o_AND_960_o is sourced by a combinatorial pin. This is
+   not good design practice. Use the CE pin to control the loading of data into
+   the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   decode/regwrite_GND_5_o_AND_256_o is sourced by a combinatorial pin. This is
+   not good design practice. Use the CE pin to control the loading of data into
+   the flip-flop.
+DRC detected 0 errors and 6 warnings.  Please see the previously displayed
 individual error or warning messages for more details.

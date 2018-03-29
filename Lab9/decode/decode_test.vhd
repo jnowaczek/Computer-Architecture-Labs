@@ -1,21 +1,9 @@
 ----------------------------------------------------------------------------------
--- Company: 
--- Engineer: 
+-- Engineer: Julian Nowaczek and Sam Larson
 -- 
 -- Create Date:    14:11:33 03/27/2018 
--- Design Name: 
 -- Module Name:    decode_test - Behavioral 
--- Project Name: 
--- Target Devices: 
--- Tool versions: 
--- Description: 
---
--- Dependencies: 
---
--- Revision: 
--- Revision 0.01 - File Created
--- Additional Comments: 
---
+-- Description: test decode and fetch modules
 ----------------------------------------------------------------------------------
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
@@ -31,7 +19,8 @@ entity decode_test is
 end decode_test;
 
 architecture Behavioral of decode_test is
-	signal pc_out, register_rs, register_rd, register_rt, immediate, instruction, jump_addr : std_logic_vector (31 downto 0);
+	signal register_rs, register_rd, register_rt : std_logic_vector (31 downto 0);
+	signal immediate, instruction, jump_addr, pc_out : std_logic_vector (31 downto 0);
 	signal clock_debounced : std_logic;
 	signal select_debounced : std_logic;
 	signal uart_data, uart_name : std_logic_vector (31 downto 0);
@@ -39,19 +28,21 @@ architecture Behavioral of decode_test is
 begin
 	decode : entity work.decode(Behavioral)
 		port map (instruction => instruction, memory_data => x"deadbeef", 
-			alu_result => x"33335555", register_rs => register_rs, register_rt => register_rt,
-			register_rd => register_rd, jump_addr => jump_addr, immediate => immediate,
-			regdst => '1', regwrite => switches(3), memtoreg => '0', reset => switches(4), clock => clock_debounced);
+			alu_result => x"33335555", register_rs => register_rs,
+			register_rt => register_rt, register_rd => register_rd,
+			jump_addr => jump_addr, immediate => immediate,
+			regdst => '1', regwrite => switches(3), memtoreg => '0',
+			reset => switches(4), clock => clock_debounced);
 		
 	fetch : entity work.fetch(Behavioral)
-		port map(clock => clock_debounced, reset => switches(4), branch_addr => x"00000000", 
-			jump_addr => x"00000000", branch_decision => '0',
-			jump_decision => '0', pc_out => pc_out,
+		port map(clock => clock_debounced, reset => switches(4),
+			branch_addr => x"00000000", jump_addr => x"00000000",
+			branch_decision => '0', jump_decision => '0', pc_out => pc_out,
 			instruction => instruction);
 			
 	uart_print : entity work.uart_print(Behavioral)
-		port map(clk => mclk, btn => select_debounced, data => uart_data, name => uart_name,
-			tx => RsTx);
+		port map(clk => mclk, btn => select_debounced, data => uart_data,
+		name => uart_name, tx => RsTx);
 
 	btn_debounce_uart: entity work.debounce2(fsmd)
 		port map(clk => mclk, sw => btn1, db_level => open, db_tick => select_debounced);

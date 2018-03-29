@@ -37,12 +37,12 @@ architecture Behavioral of fetch is
 		x"00000000");
 begin
 	process
-		variable PC : std_logic_vector (31 downto 0) := (others => '1');
+		variable PC : std_logic_vector (31 downto 0) := (others => '0');
 		variable index : integer := 0;
 	begin
 		wait until rising_edge(clock);
 		if (reset = '1') then
-			PC := (others => '1');
+			PC := (others => '0');
 			index := 0;
 		else
 			if (branch_decision = '1') then

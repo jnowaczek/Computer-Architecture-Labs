@@ -85,6 +85,7 @@
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_REPORT" xil_pn:name="decode_test.ut" xil_pn:subbranch="FPGAConfiguration"/>
     <file xil_pn:fileType="FILE_XPI" xil_pn:name="decode_test.xpi"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="decode_test.xst"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="decode_test_envsettings.html"/>
     <file xil_pn:fileType="FILE_NCD" xil_pn:name="decode_test_guide.ncd" xil_pn:origination="imported"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="decode_test_map.map" xil_pn:subbranch="Map"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="decode_test_map.mrp" xil_pn:subbranch="Map"/>
@@ -110,6 +111,7 @@
   <transforms xmlns="http://www.xilinx.com/XMLSchema">
     <transform xil_pn:end_ts="1522172189" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1522172189">
       <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
     </transform>
     <transform xil_pn:end_ts="1522181729" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="-1683269879119679452" xil_pn:start_ts="1522181729">
       <status xil_pn:value="SuccessfullyRun"/>
@@ -135,11 +137,13 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1522183338" xil_pn:in_ck="-20347514194603860" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="9132441532786971020" xil_pn:start_ts="1522183328">
+    <transform xil_pn:end_ts="1522347719" xil_pn:in_ck="-20347514194603860" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="9132441532786971020" xil_pn:start_ts="1522347711">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
       <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
       <outfile xil_pn:name="decode.ngr"/>
@@ -154,22 +158,25 @@
       <outfile xil_pn:name="webtalk_pn.xml"/>
       <outfile xil_pn:name="xst"/>
     </transform>
-    <transform xil_pn:end_ts="1522181834" xil_pn:in_ck="6578114222110546020" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="6531493345958068187" xil_pn:start_ts="1522181834">
+    <transform xil_pn:end_ts="1522347913" xil_pn:in_ck="6578114222110546020" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="6531493345958068187" xil_pn:start_ts="1522347912">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1522183343" xil_pn:in_ck="-3678041435196648969" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="-5129698577435965762" xil_pn:start_ts="1522183338">
+    <transform xil_pn:end_ts="1522347918" xil_pn:in_ck="-3678041435196648969" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="-5129698577435965762" xil_pn:start_ts="1522347913">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="_ngo"/>
       <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
       <outfile xil_pn:name="decode_test.bld"/>
       <outfile xil_pn:name="decode_test.ngd"/>
       <outfile xil_pn:name="decode_test_ngdbuild.xrpt"/>
     </transform>
-    <transform xil_pn:end_ts="1522183351" xil_pn:in_ck="1795961947890694105" xil_pn:name="TRANEXT_map_spartan6" xil_pn:prop_ck="1463976855095865663" xil_pn:start_ts="1522183343">
+    <transform xil_pn:end_ts="1522347925" xil_pn:in_ck="1795961947890694105" xil_pn:name="TRANEXT_map_spartan6" xil_pn:prop_ck="1463976855095865663" xil_pn:start_ts="1522347918">
       <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
@@ -182,39 +189,33 @@
       <outfile xil_pn:name="decode_test_summary.xml"/>
       <outfile xil_pn:name="decode_test_usage.xml"/>
     </transform>
-    <transform xil_pn:end_ts="1522183362" xil_pn:in_ck="-4046151723564473721" xil_pn:name="TRANEXT_par_spartan6" xil_pn:prop_ck="-1178055513630676559" xil_pn:start_ts="1522183351">
+    <transform xil_pn:end_ts="1522347936" xil_pn:in_ck="-4046151723564473721" xil_pn:name="TRANEXT_par_spartan6" xil_pn:prop_ck="-1178055513630676559" xil_pn:start_ts="1522347925">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <outfile xil_pn:name="_xmsgs/par.xmsgs"/>
-      <outfile xil_pn:name="decode_test.ncd"/>
-      <outfile xil_pn:name="decode_test.pad"/>
-      <outfile xil_pn:name="decode_test.par"/>
-      <outfile xil_pn:name="decode_test.ptwx"/>
-      <outfile xil_pn:name="decode_test.unroutes"/>
-      <outfile xil_pn:name="decode_test.xpi"/>
-      <outfile xil_pn:name="decode_test_pad.csv"/>
-      <outfile xil_pn:name="decode_test_pad.txt"/>
-      <outfile xil_pn:name="decode_test_par.xrpt"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputRemoved"/>
+      <status xil_pn:value="OutputRemoved"/>
     </transform>
-    <transform xil_pn:end_ts="1522183372" xil_pn:in_ck="-446405000098109434" xil_pn:name="TRANEXT_bitFile_spartan6" xil_pn:prop_ck="396117104113915555" xil_pn:start_ts="1522183362">
+    <transform xil_pn:end_ts="1522347946" xil_pn:in_ck="-6280296973399744915" xil_pn:name="TRANEXT_bitFile_spartan6" xil_pn:prop_ck="396117104113915555" xil_pn:start_ts="1522347936">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
-      <outfile xil_pn:name="_xmsgs/bitgen.xmsgs"/>
-      <outfile xil_pn:name="decode_test.bgn"/>
-      <outfile xil_pn:name="decode_test.bit"/>
-      <outfile xil_pn:name="decode_test.drc"/>
-      <outfile xil_pn:name="decode_test.ut"/>
-      <outfile xil_pn:name="usage_statistics_webtalk.html"/>
-      <outfile xil_pn:name="webtalk.log"/>
-      <outfile xil_pn:name="webtalk_pn.xml"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputRemoved"/>
+      <status xil_pn:value="OutputRemoved"/>
     </transform>
-    <transform xil_pn:end_ts="1522183362" xil_pn:in_ck="-5030451415464965142" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416185" xil_pn:start_ts="1522183358">
+    <transform xil_pn:end_ts="1522347936" xil_pn:in_ck="-1349465744966078639" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416185" xil_pn:start_ts="1522347931">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <outfile xil_pn:name="_xmsgs/trce.xmsgs"/>
-      <outfile xil_pn:name="decode_test.twr"/>
-      <outfile xil_pn:name="decode_test.twx"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputRemoved"/>
+      <status xil_pn:value="OutputRemoved"/>
     </transform>
   </transforms>
 

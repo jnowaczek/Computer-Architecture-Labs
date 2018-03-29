@@ -38,3 +38,37 @@ map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -re
 par -w -intstyle ise -ol high -mt off decode_test_map.ncd decode_test.ncd decode_test.pcf 
 trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml decode_test.twx decode_test.ncd -o decode_test.twr decode_test.pcf -ucf constraints.ucf 
 bitgen -intstyle ise -f decode_test.ut decode_test.ncd 
+par -w -intstyle ise -ol high -mt off decode_test_map.ncd decode_test.ncd decode_test.pcf 
+bitgen -intstyle ise -f decode_test.ut decode_test.ncd 
+xst -intstyle ise -ifn "C:/labs/Lab9/decode/decode_test.xst" -ofn "C:/labs/Lab9/decode/decode_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc6slx16-csg324-3 decode_test.ngc decode_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o decode_test_map.ncd decode_test.ngd decode_test.pcf 
+par -w -intstyle ise -ol high -mt off decode_test_map.ncd decode_test.ncd decode_test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml decode_test.twx decode_test.ncd -o decode_test.twr decode_test.pcf -ucf constraints.ucf 
+bitgen -intstyle ise -f decode_test.ut decode_test.ncd 
+xst -intstyle ise -ifn "C:/labs/Lab9/decode/decode_test.xst" -ofn "C:/labs/Lab9/decode/decode_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc6slx16-csg324-3 decode_test.ngc decode_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o decode_test_map.ncd decode_test.ngd decode_test.pcf 
+xst -intstyle ise -ifn "C:/labs/Lab9/decode/decode_test.xst" -ofn "C:/labs/Lab9/decode/decode_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc6slx16-csg324-3 decode_test.ngc decode_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o decode_test_map.ncd decode_test.ngd decode_test.pcf 
+xst -intstyle ise -ifn "C:/labs/Lab9/decode/decode_test.xst" -ofn "C:/labs/Lab9/decode/decode_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc6slx16-csg324-3 decode_test.ngc decode_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o decode_test_map.ncd decode_test.ngd decode_test.pcf 
+par -w -intstyle ise -ol high -mt off decode_test_map.ncd decode_test.ncd decode_test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml decode_test.twx decode_test.ncd -o decode_test.twr decode_test.pcf -ucf constraints.ucf 
+bitgen -intstyle ise -f decode_test.ut decode_test.ncd 
+xst -intstyle ise -ifn "C:/labs/Lab9/decode/decode_test.xst" -ofn "C:/labs/Lab9/decode/decode_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc6slx16-csg324-3 decode_test.ngc decode_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o decode_test_map.ncd decode_test.ngd decode_test.pcf 
+xst -intstyle ise -ifn "C:/labs/Lab9/decode/decode_test.xst" -ofn "C:/labs/Lab9/decode/decode_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc6slx16-csg324-3 decode_test.ngc decode_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o decode_test_map.ncd decode_test.ngd decode_test.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc6slx16-csg324-3 decode_test.ngc decode_test.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc6slx16-csg324-3 decode_test.ngc decode_test.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc6slx16-csg324-3 decode_test.ngc decode_test.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc6slx16-csg324-3 decode_test.ngc decode_test.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o decode_test_map.ncd decode_test.ngd decode_test.pcf 
+par -w -intstyle ise -ol high -mt off decode_test_map.ncd decode_test.ncd decode_test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml decode_test.twx decode_test.ncd -o decode_test.twr decode_test.pcf -ucf constraints.ucf 
+bitgen -intstyle ise -f decode_test.ut decode_test.ncd 

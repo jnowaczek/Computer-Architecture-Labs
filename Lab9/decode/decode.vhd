@@ -1,13 +1,9 @@
 ----------------------------------------------------------------------------------
--- Engineer: 
+-- Engineer: Julian Nowaczek and Sam Larson
 -- 
 -- Create Date:    12:02:53 03/27/2018 
--- Design Name: 
 -- Module Name:    decode - Behavioral 
--- Project Name: 
--- Target Devices: 
--- Tool versions: 
--- Description: 
+-- Description: mips decode module 
 ----------------------------------------------------------------------------------
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
@@ -15,7 +11,8 @@ use IEEE.NUMERIC_STD.ALL;
 
 entity decode is
 	port(	instruction, memory_data, alu_result : in std_logic_vector (31 downto 0);
-			register_rs, register_rt, register_rd, jump_addr, immediate : out std_logic_vector (31 downto 0);
+			register_rs, register_rt : out std_logic_vector (31 downto 0);
+			register_rd, jump_addr, immediate : out std_logic_vector (31 downto 0);
 			regdst, regwrite, memtoreg, reset, clock : in std_logic);
 end decode;
 
@@ -26,7 +23,8 @@ signal reg : reg_array := (x"00000000", x"11111111", x"22222222", x"33333333",
 	x"aaaaaaaa", x"bbbbbbbb", x"cccccccc", x"dddddddd", x"eeeeeeee", x"ffffffff");
 begin
 
-	reg_write : process (reset, memory_data, alu_result, regwrite, regdst, instruction, memtoreg)
+	reg_write : process (reset, memory_data, alu_result, regwrite, 
+		regdst, instruction, memtoreg)
 		variable write_value : std_logic_vector (31 downto 0);
 		variable addr2, addr3 : std_logic_vector (4 downto 0);
 		variable index : integer := 0;
@@ -62,13 +60,13 @@ begin
 				else
 					write_value := alu_result;
 				end if;
-			end if;
-			
-			if addr3 = "00000" then
-				reg(0) <= x"00000000";
-			else
-				index := to_integer(unsigned(addr3));
-				reg(index) <= write_value;
+
+				if addr3 = "00000" then
+					reg(0) <= x"00000000";
+				else
+					index := to_integer(unsigned(addr3));
+					reg(index) <= write_value;
+				end if;
 			end if;
 		end if;
 	end process;
