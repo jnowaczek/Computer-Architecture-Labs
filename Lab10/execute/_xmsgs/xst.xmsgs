@@ -5,8 +5,5 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="error" file="HDLCompiler" num="806" delta="old" >"C:\labs\Lab10\execute\execute.vhd" Line 31: Syntax error near &quot;<arg fmt="%s" index="1">case</arg>&quot;.
-</msg>
-
 </messages>
 

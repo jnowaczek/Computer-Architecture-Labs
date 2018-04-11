@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2018-04-02T14:06:41</DateModified>
+  <DateModified>2018-04-11T22:57:40</DateModified>
   <ModuleName>execute</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
-  <SavedFilePath>C:/labs/Lab10/execute/iseconfig/execute.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>C:/labs/Lab10/execute</ImplementationReportsDirectory>
+  <SavedFilePath>/home/ise/Julian_Nowaczek/Documents/GitHub/Computer-Architecture-Labs/Lab10/execute/iseconfig/execute.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>/home/ise/Julian_Nowaczek/Documents/GitHub/Computer-Architecture-Labs/Lab10/execute/</ImplementationReportsDirectory>
   <DateInitialized>2018-04-02T14:06:41</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

@@ -1,5 +1,5 @@
-set -tmpdir "C:/labs/Lab10/execute/xst/projnav.tmp"
-set -xsthdpdir "C:/labs/Lab10/execute/xst"
+set -tmpdir "/home/ise/Julian_Nowaczek/Documents/GitHub/Computer-Architecture-Labs/Lab10/execute/xst/projnav.tmp"
+set -xsthdpdir "/home/ise/Julian_Nowaczek/Documents/GitHub/Computer-Architecture-Labs/Lab10/execute/xst"
 run -compileonly yes
 -p xc6slx16-3-csg324
 -top execute

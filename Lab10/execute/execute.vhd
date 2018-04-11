@@ -27,39 +27,42 @@ begin
 	execute : process(ALUOp, immediate, register_rs, register_rt)
 		variable alu_output : signed (31 downto 0);
 		variable zero : std_logic := '0';
+		variable branch_offset : std_logic_vector := immediate;
 		
-		case ALUOp is
-			when "00" =>
-				alu_output := signed(register_rs) + signed(immediate);
-			when "01" =>
-				alu_output := signed(register_rs) - signed(register_rt);
-			when "10" =>
-				case immediate(5 downto 0) is
-					when "100000" => -- Addition
-						alu_output := signed(register_rs) + signed(register_rt);
-					when "100010" => -- Subtraction
-						alu_output := signed(register_rs) - signed(register_rt);
-					when "" => -- AND
-						alu_output := register_rs and register_rt;
-					when "" => -- OR
-						alu_output := regiser_rs or register_rt;
-					when "" => -- NOR
-						alu_output := register_rs nor register_rt;
-					when "" => -- SLT
-						alu_output := 
-					when "" => -- NAND
-						alu_output := register_rs nand register_rt;
-					when others -- Error
-						alu_output := x"ffffffff";
-				end case;
-			when others
-				alu_output := x"ffffffff";
-				zero := '0';
-		end case;
+		begin
+			case ALUOp is
+				when "00" =>
+					alu_output := signed(register_rs) + signed(immediate);
+				when "01" =>
+					alu_output := signed(register_rs) - signed(register_rt);
+				when "10" =>
+					case immediate(5 downto 0) is
+						when "100000" => -- Addition
+							alu_output := signed(register_rs) + signed(register_rt);
+						when "100010" => -- Subtraction
+							alu_output := signed(register_rs) - signed(register_rt);
+						when "100100" => -- AND
+							alu_output := signed(register_rs and register_rt);
+						when "100101" => -- OR
+							alu_output := signed(register_rs or register_rt);
+						when "100111" => -- NOR
+							alu_output := signed(register_rs nor register_rt);
+						when "101010" => -- SLT
+							if register_rs < register_rt then
+								alu_output := x"00000001";
+							else
+								alu_output := x"00000000";
+							end if;
+						when others => -- Error
+							alu_output := x"ffffffff";
+					end case;
+				when others =>
+					alu_output := x"ffffffff";
+					zero := '0';
+			end case;
 
-		branch_offset := immediate;
-		branch_addr := std_logic_vector(signed(PC_in)) + signed(branch_offset));
-		branch_decision <= (beq_conrol and zero);
-		alu_result <= std_logic_vector(alu_output);
+			branch_addr <= std_logic_vector(signed(PC_in) + signed(branch_offset));
+			branch_decision <= (beq_control and zero);
+			alu_result <= std_logic_vector(alu_output);
 	end process;
 end Behavioral;

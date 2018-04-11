@@ -1,18 +1,21 @@
-Release 14.5 - xst P.58f (nt64)
-Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
---> Parameter TMPDIR set to C:/labs/Lab10/execute/xst/projnav.tmp
+Release 14.7 - xst P.20160913 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to /home/ise/Julian_Nowaczek/Documents/GitHub/Computer-Architecture-Labs/Lab10/execute/xst/projnav.tmp
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.06 secs
+Total CPU time to Xst completion: 0.02 secs
  
---> Parameter xsthdpdir set to C:/labs/Lab10/execute/xst
+--> 
+Parameter xsthdpdir set to /home/ise/Julian_Nowaczek/Documents/GitHub/Computer-Architecture-Labs/Lab10/execute/xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.08 secs
+Total CPU time to Xst completion: 0.02 secs
  
---> Reading design: execute.prj
+--> 
+Reading design: execute.prj
 
 TABLE OF CONTENTS
   1) Synthesis Options Summary
@@ -39,16 +42,20 @@ TABLE OF CONTENTS
 =========================================================================
 *                          HDL Parsing                                  *
 =========================================================================
-Parsing VHDL file "C:\labs\Lab10\execute\execute.vhd" into library work
+Parsing VHDL file "/home/ise/Julian_Nowaczek/Documents/GitHub/Computer-Architecture-Labs/Lab10/execute/execute.vhd" into library work
 Parsing entity <execute>.
 Parsing architecture <Behavioral> of entity <execute>.
-ERROR:HDLCompiler:806 - "C:\labs\Lab10\execute\execute.vhd" Line 31: Syntax error near "case".
-VHDL file C:\labs\Lab10\execute\execute.vhd ignored due to errors
+
+
+Total REAL time to Xst completion: 4.00 secs
+Total CPU time to Xst completion: 2.98 secs
+ 
 --> 
 
-Total memory usage is 178168 kilobytes
 
-Number of errors   :    1 (   0 filtered)
+Total memory usage is 396612 kilobytes
+
+Number of errors   :    0 (   0 filtered)
 Number of warnings :    0 (   0 filtered)
 Number of infos    :    0 (   0 filtered)
 
