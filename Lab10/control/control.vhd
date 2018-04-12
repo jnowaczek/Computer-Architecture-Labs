@@ -86,7 +86,7 @@ begin
 				ALUOp 			<= "00";
 				jump_decision 	<= '0';
 				beq_control 	<= '0';
-			when "000100" => -- BEQ
+			when "000010" => -- JMP
 				RegDst 			<= '0';
 				ALUSrc 			<= '0';
 				MemToReg 		<= '0';
