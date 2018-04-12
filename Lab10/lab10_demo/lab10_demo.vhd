@@ -26,7 +26,7 @@ end lab10_demo;
 architecture Behavioral of lab10_demo is
 	signal sig_reg_rs, sig_reg_rt, sig_reg_rd : std_logic_vector (31 downto 0);
 	signal sig_jump_decision, sig_branch_decision : std_logic;
-	signal clock, write_clock : std_logic;
+	signal sig_clock, sig_write_clock : std_logic;
 	
 	signal sig_instruction : std_logic_vector (31 downto 0);
 	
@@ -37,7 +37,7 @@ begin
 						jump_decision => sig_jump_decision,
 						PC_out,
 						jump_addr,
-						clock,
+						clock => sig_clock,
 						instruction,
 						reset);
 
@@ -55,8 +55,8 @@ begin
 						regwrite,
 						memtoreg,
 						reset,
-						clock,
-						writeClock);
+						clock => sig_clock,
+						writeClock => sig_write_clock);
 						
 	execute : work.execute(Behavioral)
 		port map (	ALUOp,
@@ -88,7 +88,7 @@ begin
 						mem_write,
 						mem_read,
 						read_data,
-						wclock);
+						wclock => sig_write_clock);
 						
 end Behavioral;
 
