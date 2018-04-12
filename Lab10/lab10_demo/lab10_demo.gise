@@ -21,7 +21,16 @@
 
   <sourceproject xmlns="http://www.xilinx.com/XMLSchema" xil_pn:fileType="FILE_XISE" xil_pn:name="lab10_demo.xise"/>
 
-  <files xmlns="http://www.xilinx.com/XMLSchema"/>
+  <files xmlns="http://www.xilinx.com/XMLSchema">
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="execute.prj"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="execute.stx"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="execute.xst"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="lab10_demo.prj"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="lab10_demo.stx"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="lab10_demo.xst"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xst"/>
+  </files>
 
   <transforms xmlns="http://www.xilinx.com/XMLSchema"/>
 

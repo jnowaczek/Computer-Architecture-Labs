@@ -1,0 +1,6 @@
+vhdl work "fetch.vhd"
+vhdl work "execute.vhd"
+vhdl work "decode.vhd"
+vhdl work "data.vhd"
+vhdl work "control.vhd"
+vhdl work "lab10_demo.vhd"

@@ -1,0 +1,77 @@
+Release 14.7 - xst P.20160913 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to /home/ise/Julian_Nowaczek/Documents/GitHub/Computer-Architecture-Labs/Lab10/lab10_demo/xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.02 secs
+ 
+--> 
+Parameter xsthdpdir set to /home/ise/Julian_Nowaczek/Documents/GitHub/Computer-Architecture-Labs/Lab10/lab10_demo/xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.02 secs
+ 
+--> 
+Reading design: lab10_demo.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "/home/ise/Julian_Nowaczek/Documents/GitHub/Computer-Architecture-Labs/Lab10/lab10_demo/fetch.vhd" into library work
+Parsing entity <fetch>.
+Parsing architecture <Behavioral> of entity <fetch>.
+Parsing VHDL file "/home/ise/Julian_Nowaczek/Documents/GitHub/Computer-Architecture-Labs/Lab10/lab10_demo/execute.vhd" into library work
+Parsing entity <execute>.
+Parsing architecture <Behavioral> of entity <execute>.
+Parsing VHDL file "/home/ise/Julian_Nowaczek/Documents/GitHub/Computer-Architecture-Labs/Lab10/lab10_demo/decode.vhd" into library work
+Parsing entity <decode>.
+Parsing architecture <Behavioral> of entity <decode>.
+Parsing VHDL file "/home/ise/Julian_Nowaczek/Documents/GitHub/Computer-Architecture-Labs/Lab10/lab10_demo/data.vhd" into library work
+Parsing entity <data>.
+Parsing architecture <Behavioral> of entity <data>.
+Parsing VHDL file "/home/ise/Julian_Nowaczek/Documents/GitHub/Computer-Architecture-Labs/Lab10/lab10_demo/control.vhd" into library work
+Parsing entity <control>.
+Parsing architecture <Behavioral> of entity <control>.
+WARNING:HDLCompiler:1369 - "/home/ise/Julian_Nowaczek/Documents/GitHub/Computer-Architecture-Labs/Lab10/lab10_demo/control.vhd" Line 35: Possible infinite loop; process does not have a wait statement
+Parsing VHDL file "/home/ise/Julian_Nowaczek/Documents/GitHub/Computer-Architecture-Labs/Lab10/lab10_demo/lab10_demo.vhd" into library work
+Parsing entity <lab10_demo>.
+Parsing architecture <Behavioral> of entity <lab10_demo>.
+
+
+Total REAL time to Xst completion: 3.00 secs
+Total CPU time to Xst completion: 2.63 secs
+ 
+--> 
+
+
+Total memory usage is 396572 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

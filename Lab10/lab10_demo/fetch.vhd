@@ -21,11 +21,6 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.NUMERIC_STD.ALL;
 
--- Uncomment the following library declaration if instantiating
--- any Xilinx primitives in this code.
---library UNISIM;
---use UNISIM.VComponents.all;
-
 entity fetch is
 	port(	branch_addr, jump_addr : in std_logic_vector (3 downto 0);
 			branch_decision, jump_decision, clock, reset : in std_logic;
