@@ -1,0 +1,108 @@
+xst -intstyle ise -ifn "C:/labs/Lab10/lab10_demo/lab10_demo.xst" -ofn "C:/labs/Lab10/lab10_demo/lab10_demo.syr" 
+xst -intstyle ise -ifn "C:/labs/Lab10/lab10_demo/lab10_demo.xst" -ofn "C:/labs/Lab10/lab10_demo/lab10_demo.syr" 
+xst -intstyle ise -ifn "C:/labs/Lab10/lab10_demo/lab10_demo.xst" -ofn "C:/labs/Lab10/lab10_demo/lab10_demo.syr" 
+xst -intstyle ise -ifn "C:/labs/Lab10/lab10_demo/lab10_demo.xst" -ofn "C:/labs/Lab10/lab10_demo/lab10_demo.syr" 
+xst -intstyle ise -ifn "C:/labs/Lab10/lab10_demo/lab10_demo.xst" -ofn "C:/labs/Lab10/lab10_demo/lab10_demo.syr" 
+xst -intstyle ise -ifn "C:/labs/Lab10/lab10_demo/lab10_demo.xst" -ofn "C:/labs/Lab10/lab10_demo/lab10_demo.syr" 
+xst -intstyle ise -ifn "C:/labs/Lab10/lab10_demo/lab10_demo.xst" -ofn "C:/labs/Lab10/lab10_demo/lab10_demo.syr" 
+xst -intstyle ise -ifn "C:/labs/Lab10/lab10_demo/lab10_demo.xst" -ofn "C:/labs/Lab10/lab10_demo/lab10_demo.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc6slx16-csg324-3 lab10_demo.ngc lab10_demo.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o lab10_demo_map.ncd lab10_demo.ngd lab10_demo.pcf 
+par -w -intstyle ise -ol high -mt off lab10_demo_map.ncd lab10_demo.ncd lab10_demo.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml lab10_demo.twx lab10_demo.ncd -o lab10_demo.twr lab10_demo.pcf -ucf constraints.ucf 
+bitgen -intstyle ise -f lab10_demo.ut lab10_demo.ncd 
+xst -intstyle ise -ifn "C:/labs/Lab10/lab10_demo/lab10_demo.xst" -ofn "C:/labs/Lab10/lab10_demo/lab10_demo.syr" 
+xst -intstyle ise -ifn "C:/labs/Lab10/lab10_demo/lab10_demo.xst" -ofn "C:/labs/Lab10/lab10_demo/lab10_demo.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc6slx16-csg324-3 lab10_demo.ngc lab10_demo.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o lab10_demo_map.ncd lab10_demo.ngd lab10_demo.pcf 
+par -w -intstyle ise -ol high -mt off lab10_demo_map.ncd lab10_demo.ncd lab10_demo.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml lab10_demo.twx lab10_demo.ncd -o lab10_demo.twr lab10_demo.pcf -ucf constraints.ucf 
+bitgen -intstyle ise -f lab10_demo.ut lab10_demo.ncd 
+xst -intstyle ise -ifn "C:/labs/Lab10/lab10_demo/lab10_demo.xst" -ofn "C:/labs/Lab10/lab10_demo/lab10_demo.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc6slx16-csg324-3 lab10_demo.ngc lab10_demo.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o lab10_demo_map.ncd lab10_demo.ngd lab10_demo.pcf 
+par -w -intstyle ise -ol high -mt off lab10_demo_map.ncd lab10_demo.ncd lab10_demo.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml lab10_demo.twx lab10_demo.ncd -o lab10_demo.twr lab10_demo.pcf -ucf constraints.ucf 
+bitgen -intstyle ise -f lab10_demo.ut lab10_demo.ncd 
+xst -intstyle ise -ifn "C:/labs/Lab10/lab10_demo/lab10_demo.xst" -ofn "C:/labs/Lab10/lab10_demo/lab10_demo.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc6slx16-csg324-3 lab10_demo.ngc lab10_demo.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o lab10_demo_map.ncd lab10_demo.ngd lab10_demo.pcf 
+par -w -intstyle ise -ol high -mt off lab10_demo_map.ncd lab10_demo.ncd lab10_demo.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml lab10_demo.twx lab10_demo.ncd -o lab10_demo.twr lab10_demo.pcf -ucf constraints.ucf 
+bitgen -intstyle ise -f lab10_demo.ut lab10_demo.ncd 
+xst -intstyle ise -ifn "C:/labs/Lab10/lab10_demo/lab10_demo.xst" -ofn "C:/labs/Lab10/lab10_demo/lab10_demo.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc6slx16-csg324-3 lab10_demo.ngc lab10_demo.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o lab10_demo_map.ncd lab10_demo.ngd lab10_demo.pcf 
+par -w -intstyle ise -ol high -mt off lab10_demo_map.ncd lab10_demo.ncd lab10_demo.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml lab10_demo.twx lab10_demo.ncd -o lab10_demo.twr lab10_demo.pcf -ucf constraints.ucf 
+bitgen -intstyle ise -f lab10_demo.ut lab10_demo.ncd 
+xst -intstyle ise -ifn "C:/labs/Lab10/lab10_demo/lab10_demo.xst" -ofn "C:/labs/Lab10/lab10_demo/lab10_demo.syr" 
+xst -intstyle ise -ifn "C:/labs/Lab10/lab10_demo/lab10_demo.xst" -ofn "C:/labs/Lab10/lab10_demo/lab10_demo.syr" 
+xst -intstyle ise -ifn "C:/labs/Lab10/lab10_demo/lab10_demo.xst" -ofn "C:/labs/Lab10/lab10_demo/lab10_demo.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc6slx16-csg324-3 lab10_demo.ngc lab10_demo.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o lab10_demo_map.ncd lab10_demo.ngd lab10_demo.pcf 
+par -w -intstyle ise -ol high -mt off lab10_demo_map.ncd lab10_demo.ncd lab10_demo.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml lab10_demo.twx lab10_demo.ncd -o lab10_demo.twr lab10_demo.pcf -ucf constraints.ucf 
+bitgen -intstyle ise -f lab10_demo.ut lab10_demo.ncd 
+xst -intstyle ise -ifn "C:/labs/Lab10/lab10_demo/lab10_demo.xst" -ofn "C:/labs/Lab10/lab10_demo/lab10_demo.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc6slx16-csg324-3 lab10_demo.ngc lab10_demo.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o lab10_demo_map.ncd lab10_demo.ngd lab10_demo.pcf 
+par -w -intstyle ise -ol high -mt off lab10_demo_map.ncd lab10_demo.ncd lab10_demo.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml lab10_demo.twx lab10_demo.ncd -o lab10_demo.twr lab10_demo.pcf -ucf constraints.ucf 
+bitgen -intstyle ise -f lab10_demo.ut lab10_demo.ncd 
+xst -intstyle ise -ifn "C:/labs/Lab10/lab10_demo/lab10_demo.xst" -ofn "C:/labs/Lab10/lab10_demo/lab10_demo.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc6slx16-csg324-3 lab10_demo.ngc lab10_demo.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o lab10_demo_map.ncd lab10_demo.ngd lab10_demo.pcf 
+par -w -intstyle ise -ol high -mt off lab10_demo_map.ncd lab10_demo.ncd lab10_demo.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml lab10_demo.twx lab10_demo.ncd -o lab10_demo.twr lab10_demo.pcf -ucf constraints.ucf 
+bitgen -intstyle ise -f lab10_demo.ut lab10_demo.ncd 
+xst -intstyle ise -ifn "C:/labs/Lab10/lab10_demo/lab10_demo.xst" -ofn "C:/labs/Lab10/lab10_demo/lab10_demo.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc6slx16-csg324-3 lab10_demo.ngc lab10_demo.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o lab10_demo_map.ncd lab10_demo.ngd lab10_demo.pcf 
+par -w -intstyle ise -ol high -mt off lab10_demo_map.ncd lab10_demo.ncd lab10_demo.pcf 
+bitgen -intstyle ise -f lab10_demo.ut lab10_demo.ncd 
+xst -intstyle ise -ifn "C:/labs/Lab10/lab10_demo/lab10_demo.xst" -ofn "C:/labs/Lab10/lab10_demo/lab10_demo.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc6slx16-csg324-3 lab10_demo.ngc lab10_demo.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o lab10_demo_map.ncd lab10_demo.ngd lab10_demo.pcf 
+par -w -intstyle ise -ol high -mt off lab10_demo_map.ncd lab10_demo.ncd lab10_demo.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml lab10_demo.twx lab10_demo.ncd -o lab10_demo.twr lab10_demo.pcf -ucf constraints.ucf 
+bitgen -intstyle ise -f lab10_demo.ut lab10_demo.ncd 
+xst -intstyle ise -ifn "C:/labs/Lab10/lab10_demo/lab10_demo.xst" -ofn "C:/labs/Lab10/lab10_demo/lab10_demo.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc6slx16-csg324-3 lab10_demo.ngc lab10_demo.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o lab10_demo_map.ncd lab10_demo.ngd lab10_demo.pcf 
+par -w -intstyle ise -ol high -mt off lab10_demo_map.ncd lab10_demo.ncd lab10_demo.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml lab10_demo.twx lab10_demo.ncd -o lab10_demo.twr lab10_demo.pcf -ucf constraints.ucf 
+bitgen -intstyle ise -f lab10_demo.ut lab10_demo.ncd 
+xst -intstyle ise -ifn "C:/labs/Lab10/lab10_demo/lab10_demo.xst" -ofn "C:/labs/Lab10/lab10_demo/lab10_demo.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc6slx16-csg324-3 lab10_demo.ngc lab10_demo.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o lab10_demo_map.ncd lab10_demo.ngd lab10_demo.pcf 
+par -w -intstyle ise -ol high -mt off lab10_demo_map.ncd lab10_demo.ncd lab10_demo.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml lab10_demo.twx lab10_demo.ncd -o lab10_demo.twr lab10_demo.pcf -ucf constraints.ucf 
+bitgen -intstyle ise -f lab10_demo.ut lab10_demo.ncd 
+xst -intstyle ise -ifn "C:/labs/Lab10/lab10_demo/lab10_demo.xst" -ofn "C:/labs/Lab10/lab10_demo/lab10_demo.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc6slx16-csg324-3 lab10_demo.ngc lab10_demo.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o lab10_demo_map.ncd lab10_demo.ngd lab10_demo.pcf 
+par -w -intstyle ise -ol high -mt off lab10_demo_map.ncd lab10_demo.ncd lab10_demo.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml lab10_demo.twx lab10_demo.ncd -o lab10_demo.twr lab10_demo.pcf -ucf constraints.ucf 
+bitgen -intstyle ise -f lab10_demo.ut lab10_demo.ncd 
+xst -intstyle ise -ifn "C:/labs/Lab10/lab10_demo/lab10_demo.xst" -ofn "C:/labs/Lab10/lab10_demo/lab10_demo.syr" 
+xst -intstyle ise -ifn "C:/labs/Lab10/lab10_demo/lab10_demo.xst" -ofn "C:/labs/Lab10/lab10_demo/lab10_demo.syr" 
+xst -intstyle ise -ifn "C:/labs/Lab10/lab10_demo/lab10_demo.xst" -ofn "C:/labs/Lab10/lab10_demo/lab10_demo.syr" 
+xst -intstyle ise -ifn "C:/labs/Lab10/lab10_demo/lab10_demo.xst" -ofn "C:/labs/Lab10/lab10_demo/lab10_demo.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc6slx16-csg324-3 lab10_demo.ngc lab10_demo.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o lab10_demo_map.ncd lab10_demo.ngd lab10_demo.pcf 
+par -w -intstyle ise -ol high -mt off lab10_demo_map.ncd lab10_demo.ncd lab10_demo.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml lab10_demo.twx lab10_demo.ncd -o lab10_demo.twr lab10_demo.pcf -ucf constraints.ucf 
+bitgen -intstyle ise -f lab10_demo.ut lab10_demo.ncd 
+xst -intstyle ise -ifn "C:/labs/Lab10/lab10_demo/lab10_demo.xst" -ofn "C:/labs/Lab10/lab10_demo/lab10_demo.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc6slx16-csg324-3 lab10_demo.ngc lab10_demo.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o lab10_demo_map.ncd lab10_demo.ngd lab10_demo.pcf 
+par -w -intstyle ise -ol high -mt off lab10_demo_map.ncd lab10_demo.ncd lab10_demo.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml lab10_demo.twx lab10_demo.ncd -o lab10_demo.twr lab10_demo.pcf -ucf constraints.ucf 
+bitgen -intstyle ise -f lab10_demo.ut lab10_demo.ncd 
+xst -intstyle ise -ifn "C:/labs/Lab10/lab10_demo/lab10_demo.xst" -ofn "C:/labs/Lab10/lab10_demo/lab10_demo.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc6slx16-csg324-3 lab10_demo.ngc lab10_demo.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o lab10_demo_map.ncd lab10_demo.ngd lab10_demo.pcf 
+par -w -intstyle ise -ol high -mt off lab10_demo_map.ncd lab10_demo.ncd lab10_demo.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml lab10_demo.twx lab10_demo.ncd -o lab10_demo.twr lab10_demo.pcf -ucf constraints.ucf 
+bitgen -intstyle ise -f lab10_demo.ut lab10_demo.ncd 

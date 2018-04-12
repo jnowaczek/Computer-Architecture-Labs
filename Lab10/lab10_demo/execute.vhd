@@ -15,7 +15,7 @@ use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.NUMERIC_STD.ALL;
 
 entity execute is
-	port(	ALUOp : in std_logic_vector (2 downto 0);
+	port(	ALUOp : in std_logic_vector (1 downto 0);
 			beq_control : in std_logic;
 			PC_in, register_rs, register_rt, immediate : in std_logic_vector (31 downto 0);
 			alu_result, branch_addr : out std_logic_vector (31 downto 0);

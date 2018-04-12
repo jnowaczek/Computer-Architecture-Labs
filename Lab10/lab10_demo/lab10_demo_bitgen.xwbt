@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\labs\Lab10\lab10_demo\lab10_demo.ncd
+OUTFILE=C:\labs\Lab10\lab10_demo\lab10_demo.bit
+FAMILY=Spartan6
+PART=xc6slx16-3csg324
+WORKINGDIR=C:\labs\Lab10\lab10_demo
+LICENSE=WebPack
+USER_INFO=210669579_0_0_028

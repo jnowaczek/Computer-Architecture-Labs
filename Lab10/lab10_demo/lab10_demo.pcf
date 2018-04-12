@@ -1,0 +1,121 @@
+//! **************************************************************************
+// Written by: Map P.58f on Thu Apr 12 15:07:44 2018
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "RsTx" LOCATE = SITE "N18" LEVEL 1;
+COMP "btn0" LOCATE = SITE "C4" LEVEL 1;
+COMP "btn1" LOCATE = SITE "D9" LEVEL 1;
+COMP "mclk" LOCATE = SITE "V10" LEVEL 1;
+COMP "an<0>" LOCATE = SITE "N16" LEVEL 1;
+COMP "an<1>" LOCATE = SITE "N15" LEVEL 1;
+COMP "an<2>" LOCATE = SITE "P18" LEVEL 1;
+COMP "an<3>" LOCATE = SITE "P17" LEVEL 1;
+COMP "switches<0>" LOCATE = SITE "T10" LEVEL 1;
+COMP "switches<1>" LOCATE = SITE "T9" LEVEL 1;
+COMP "switches<2>" LOCATE = SITE "V9" LEVEL 1;
+COMP "switches<3>" LOCATE = SITE "T5" LEVEL 1;
+COMP "leds<0>" LOCATE = SITE "U16" LEVEL 1;
+COMP "leds<1>" LOCATE = SITE "V16" LEVEL 1;
+COMP "leds<2>" LOCATE = SITE "U15" LEVEL 1;
+COMP "leds<3>" LOCATE = SITE "T11" LEVEL 1;
+COMP "seg<0>" LOCATE = SITE "T17" LEVEL 1;
+COMP "seg<1>" LOCATE = SITE "T18" LEVEL 1;
+COMP "seg<2>" LOCATE = SITE "U17" LEVEL 1;
+COMP "seg<3>" LOCATE = SITE "U18" LEVEL 1;
+COMP "seg<4>" LOCATE = SITE "M14" LEVEL 1;
+COMP "seg<5>" LOCATE = SITE "N14" LEVEL 1;
+COMP "seg<6>" LOCATE = SITE "L14" LEVEL 1;
+COMP "seg<7>" LOCATE = SITE "M13" LEVEL 1;
+COMP "mem_select<0>" LOCATE = SITE "U8" LEVEL 1;
+COMP "mem_select<1>" LOCATE = SITE "V8" LEVEL 1;
+TIMEGRP sys_clk_pin = BEL "btn_debounce_uart/state_reg_FSM_FFd1" BEL
+        "btn_debounce_uart/state_reg_FSM_FFd2" BEL
+        "btn_debounce_uart/q_reg_20" BEL "btn_debounce_uart/q_reg_19" BEL
+        "btn_debounce_uart/q_reg_18" BEL "btn_debounce_uart/q_reg_17" BEL
+        "btn_debounce_uart/q_reg_16" BEL "btn_debounce_uart/q_reg_15" BEL
+        "btn_debounce_uart/q_reg_14" BEL "btn_debounce_uart/q_reg_13" BEL
+        "btn_debounce_uart/q_reg_12" BEL "btn_debounce_uart/q_reg_11" BEL
+        "btn_debounce_uart/q_reg_10" BEL "btn_debounce_uart/q_reg_9" BEL
+        "btn_debounce_uart/q_reg_8" BEL "btn_debounce_uart/q_reg_7" BEL
+        "btn_debounce_uart/q_reg_6" BEL "btn_debounce_uart/q_reg_5" BEL
+        "btn_debounce_uart/q_reg_4" BEL "btn_debounce_uart/q_reg_3" BEL
+        "btn_debounce_uart/q_reg_2" BEL "btn_debounce_uart/q_reg_1" BEL
+        "btn_debounce_uart/q_reg_0" BEL
+        "btn_debounce_clock/state_reg_FSM_FFd1" BEL
+        "btn_debounce_clock/state_reg_FSM_FFd2" BEL
+        "btn_debounce_clock/q_reg_20" BEL "btn_debounce_clock/q_reg_19" BEL
+        "btn_debounce_clock/q_reg_18" BEL "btn_debounce_clock/q_reg_17" BEL
+        "btn_debounce_clock/q_reg_16" BEL "btn_debounce_clock/q_reg_15" BEL
+        "btn_debounce_clock/q_reg_14" BEL "btn_debounce_clock/q_reg_13" BEL
+        "btn_debounce_clock/q_reg_12" BEL "btn_debounce_clock/q_reg_11" BEL
+        "btn_debounce_clock/q_reg_10" BEL "btn_debounce_clock/q_reg_9" BEL
+        "btn_debounce_clock/q_reg_8" BEL "btn_debounce_clock/q_reg_7" BEL
+        "btn_debounce_clock/q_reg_6" BEL "btn_debounce_clock/q_reg_5" BEL
+        "btn_debounce_clock/q_reg_4" BEL "btn_debounce_clock/q_reg_3" BEL
+        "btn_debounce_clock/q_reg_2" BEL "btn_debounce_clock/q_reg_1" BEL
+        "btn_debounce_clock/q_reg_0" BEL "uart_print/state_reg_3" BEL
+        "uart_print/state_reg_2" BEL "uart_print/state_reg_1" BEL
+        "uart_print/Imp_UART_tx_chr/bitIndex_30" BEL
+        "uart_print/Imp_UART_tx_chr/bitIndex_29" BEL
+        "uart_print/Imp_UART_tx_chr/bitIndex_28" BEL
+        "uart_print/Imp_UART_tx_chr/bitIndex_27" BEL
+        "uart_print/Imp_UART_tx_chr/bitIndex_26" BEL
+        "uart_print/Imp_UART_tx_chr/bitIndex_25" BEL
+        "uart_print/Imp_UART_tx_chr/bitIndex_24" BEL
+        "uart_print/Imp_UART_tx_chr/bitIndex_23" BEL
+        "uart_print/Imp_UART_tx_chr/bitIndex_22" BEL
+        "uart_print/Imp_UART_tx_chr/bitIndex_21" BEL
+        "uart_print/Imp_UART_tx_chr/bitIndex_20" BEL
+        "uart_print/Imp_UART_tx_chr/bitIndex_19" BEL
+        "uart_print/Imp_UART_tx_chr/bitIndex_18" BEL
+        "uart_print/Imp_UART_tx_chr/bitIndex_17" BEL
+        "uart_print/Imp_UART_tx_chr/bitIndex_16" BEL
+        "uart_print/Imp_UART_tx_chr/bitIndex_15" BEL
+        "uart_print/Imp_UART_tx_chr/bitIndex_14" BEL
+        "uart_print/Imp_UART_tx_chr/bitIndex_13" BEL
+        "uart_print/Imp_UART_tx_chr/bitIndex_12" BEL
+        "uart_print/Imp_UART_tx_chr/bitIndex_11" BEL
+        "uart_print/Imp_UART_tx_chr/bitIndex_10" BEL
+        "uart_print/Imp_UART_tx_chr/bitIndex_9" BEL
+        "uart_print/Imp_UART_tx_chr/bitIndex_8" BEL
+        "uart_print/Imp_UART_tx_chr/bitIndex_7" BEL
+        "uart_print/Imp_UART_tx_chr/bitIndex_6" BEL
+        "uart_print/Imp_UART_tx_chr/bitIndex_5" BEL
+        "uart_print/Imp_UART_tx_chr/bitIndex_4" BEL
+        "uart_print/Imp_UART_tx_chr/bitIndex_3" BEL
+        "uart_print/Imp_UART_tx_chr/bitIndex_2" BEL
+        "uart_print/Imp_UART_tx_chr/bitIndex_1" BEL
+        "uart_print/Imp_UART_tx_chr/bitIndex_0" BEL
+        "uart_print/Imp_UART_tx_chr/bitTmr_11" BEL
+        "uart_print/Imp_UART_tx_chr/bitTmr_10" BEL
+        "uart_print/Imp_UART_tx_chr/bitTmr_9" BEL
+        "uart_print/Imp_UART_tx_chr/bitTmr_8" BEL
+        "uart_print/Imp_UART_tx_chr/bitTmr_7" BEL
+        "uart_print/Imp_UART_tx_chr/bitTmr_6" BEL
+        "uart_print/Imp_UART_tx_chr/bitTmr_5" BEL
+        "uart_print/Imp_UART_tx_chr/bitTmr_4" BEL
+        "uart_print/Imp_UART_tx_chr/bitTmr_3" BEL
+        "uart_print/Imp_UART_tx_chr/bitTmr_2" BEL
+        "uart_print/Imp_UART_tx_chr/bitTmr_1" BEL
+        "uart_print/Imp_UART_tx_chr/bitTmr_0" BEL
+        "uart_print/Imp_UART_tx_chr/txState_FSM_FFd1" BEL
+        "uart_print/Imp_UART_tx_chr/txState_FSM_FFd2" BEL
+        "uart_print/Imp_UART_tx_chr/txBit" BEL
+        "uart_print/Imp_UART_tx_chr/txData_7" BEL
+        "uart_print/Imp_UART_tx_chr/txData_6" BEL
+        "uart_print/Imp_UART_tx_chr/txData_5" BEL
+        "uart_print/Imp_UART_tx_chr/txData_4" BEL
+        "uart_print/Imp_UART_tx_chr/txData_3" BEL
+        "uart_print/Imp_UART_tx_chr/txData_2" BEL
+        "uart_print/Imp_UART_tx_chr/txData_1" BEL "sseg_out/clk_19" BEL
+        "sseg_out/clk_18" BEL "sseg_out/clk_17" BEL "sseg_out/clk_16" BEL
+        "sseg_out/clk_15" BEL "sseg_out/clk_14" BEL "sseg_out/clk_13" BEL
+        "sseg_out/clk_12" BEL "sseg_out/clk_11" BEL "sseg_out/clk_10" BEL
+        "sseg_out/clk_9" BEL "sseg_out/clk_8" BEL "sseg_out/clk_7" BEL
+        "sseg_out/clk_6" BEL "sseg_out/clk_5" BEL "sseg_out/clk_4" BEL
+        "sseg_out/clk_3" BEL "sseg_out/clk_2" BEL "sseg_out/clk_1" BEL
+        "sseg_out/clk_0" BEL "uart_print/state_reg_0" BEL "mclk_BUFGP/BUFG";
+TS_sys_clk_pin = PERIOD TIMEGRP "sys_clk_pin" 100 MHz HIGH 50%;
+SCHEMATIC END;
+

@@ -54,6 +54,9 @@ begin
 		if mem_write = '1' then
 			data_mem(to_integer(addr)) := mem_content;
 			read_data <= mem_content;
+		elsif mem_read = '1' then
+			mem_content := data_mem(to_integer(addr));
+			read_data <= mem_content;
 		end if;
 	end process;
 end Behavioral;
